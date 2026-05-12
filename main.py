@@ -17,6 +17,16 @@ while True:
 
     elif choice == "3":
         break
+    
+    elif choice == "4":
+        index = int(input("Enter note number: "))
+
+        if 1 <= index <= len(notes):
+            notes.pop(index - 1)
+            print("Note deleted")
+        else:
+            print("Invalid note number")
 
     else:
         print("Invalid option")
+        
