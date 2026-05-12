@@ -12,8 +12,8 @@ while True:
         notes.append(note)
 
     elif choice == "2":
-        for note in notes:
-            print(note)
+        for index, note in enumerate(notes, start=1):
+            print(index, note)
 
     elif choice == "3":
         break
